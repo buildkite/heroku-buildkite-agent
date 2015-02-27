@@ -1,0 +1,1 @@
+agent: bin/buildkite-agent start
