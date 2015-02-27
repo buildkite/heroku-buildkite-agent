@@ -1,4 +1,4 @@
-# Sample buildkite-agent on Heroku
+# buildkite-agent Heroku app
 
 An example of running the buildkite-agent on a Heroku dyno using [Ø buildpack](https://github.com/ryandotsmith/null-buildpack) on their Cedar stack.
 
