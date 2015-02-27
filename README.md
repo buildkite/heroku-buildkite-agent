@@ -38,26 +38,26 @@ $ heroku logs -t
 
 ```bash
 # Create a dyno
-heroku create my-buildkite-agent \
-              --buildpack https://github.com/ryandotsmith/null-buildpack.git
+$ heroku create my-buildkite-agent \
+               --buildpack https://github.com/ryandotsmith/null-buildpack.git
 
 # Put in your token and any metadata for targeting the agents
-heroku config:set BUILDKITE_AGENT_TOKEN=xxx \
-                  BUILDKITE_AGENT_META_DATA=key1=val2,key2=val2 \
-                  BUILDKITE_BOOTSTRAP_SCRIPT_PATH=/app/etc/bootstrap.sh \
-                  BUILDKITE_HOOKS_PATH=/app/hooks
+$ heroku config:set BUILDKITE_AGENT_TOKEN=xxx \
+                    BUILDKITE_AGENT_META_DATA=key1=val2,key2=val2 \
+                    BUILDKITE_BOOTSTRAP_SCRIPT_PATH=/app/etc/bootstrap.sh \
+                    BUILDKITE_HOOKS_PATH=/app/hooks
 
 # :rocket:
-git push heroku master
+$ git push heroku master
 
 # Spin up an agent on a 1x dyno
-heroku scale agent=1
+$ heroku scale agent=1
 
 # Tail the logs
-heroku logs -t
+$ heroku logs -t
 
 # Spin up an squadron of 2x agent dynos
-heroku scale agent=24:2X
+$ heroku scale agent=24:2X
 ```
 
 ## Customising
