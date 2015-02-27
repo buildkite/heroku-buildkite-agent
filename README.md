@@ -6,7 +6,7 @@ This embeds buildkite-agent version 1.0-beta.12.317 (Linux AMD64). To update the
 
 ```
 $ heroku logs -t
-2015-02-27T03:23:43.210411+00:00 heroku[api]: Set BUILDKITE_BOOTSTRAP_SCRIPT_PATH, BUILDKITE_HOOKS_PATH config vars by t@toolmantim.com
+2015-02-27T03:23:43.210411+00:00 heroku[api]: Set BUILDKITE_AGENT_TOKEN, BUILDKITE_BOOTSTRAP_SCRIPT_PATH, BUILDKITE_HOOKS_PATH config vars by t@toolmantim.com
 2015-02-27T03:24:09.990769+00:00 heroku[api]: Release v6 created by t@toolmantim.com
 2015-02-27T03:24:09.990769+00:00 heroku[api]: Deploy 400a95c by t@toolmantim.com
 2015-02-27T03:24:16.942876+00:00 heroku[api]: Scale to agent=1 by t@toolmantim.com
