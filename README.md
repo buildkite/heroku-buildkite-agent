@@ -2,7 +2,7 @@
 
 An example of running the buildkite-agent on a Heroku dyno using [Ø buildpack](https://github.com/ryandotsmith/null-buildpack) on their Cedar stack.
 
-This embeds buildkite-agent version 1.0-beta.30.516. To update simply extract the [latest linux-amd64 release](https://github.com/buildkite/agent/releases) into the project root. Pull requests welcome!
+This embeds buildkite-agent version 2.0.4. To update simply extract the [latest linux-amd64 release](https://github.com/buildkite/agent/releases/latest) into the project root. Pull requests welcome!
 
 ## Usage
 
