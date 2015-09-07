@@ -1,0 +1,23 @@
+{
+  "name": "Buildkite Agent",
+  "website": "https://buildkite.com",
+  "description": "Run Buildkite workers as a Heroku app",
+  "repository": "https://github.com/bjeanes/heroku-buildkite-agent",
+  "logo": "https://logo.clearbit.com/buildkite.com",
+  "keywords": ["buildkite", "ci", "tests", "continuous integration"],
+  "env": {
+    "BUILDKITE_AGENT_TOKEN": {
+      "description": "Get from https://buildkite.com/organizations/YOUR_ORG/agents",
+      "required": true
+    },
+    "BUILDKITE_AGENT_META_DATA": {
+      "description": "Metadata to apply to all builds on this agent. See https://buildkite.com/docs/agent/agent-meta-data",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/ryandotsmith/null-buildpack.git"
+    }
+  ]
+}
