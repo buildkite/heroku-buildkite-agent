@@ -10,6 +10,11 @@
       "description": "Get from https://buildkite.com/organizations/YOUR_ORG/agents",
       "required": true
     },
+    "BUILDKITE_AGENT_NAME": {
+      "description": "Custom agent name",
+      "value": "heroku-%n",
+      "required": false
+    },
     "BUILDKITE_AGENT_META_DATA": {
       "description": "Metadata to apply to all builds on this agent. See https://buildkite.com/docs/agent/agent-meta-data",
       "required": false
