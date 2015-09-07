@@ -18,11 +18,20 @@
     "BUILDKITE_AGENT_META_DATA": {
       "description": "Metadata to apply to all builds on this agent. See https://buildkite.com/docs/agent/agent-meta-data",
       "required": false
+    },
+    "GITHUB_AUTH_TOKEN": {
+      "description": "Used to access private GitHub repos cloned with HTTPS. See http://developer.github.com/v3/oauth/#non-web-application-flow",
+      "required": false
+    },
+    "SSH_KEY": {
+      "description": "Private SSH key for keypair used to fetch repositories, if needed",
+      "required": false
     }
   },
   "buildpacks": [
-    {
-      "url": "https://github.com/ryandotsmith/null-buildpack.git"
-    }
+    { "url": "https://github.com/bjeanes/ssh-private-key-buildpack.git" },
+    { "url": "https://github.com/bjeanes/heroku-buildpack-github-netrc.git" },
+    { "url": "https://github.com/bjeanes/heroku-buildpack-copy-build-creds.git" },
+    { "url": "https://github.com/ryandotsmith/null-buildpack.git" }
   ]
 }
