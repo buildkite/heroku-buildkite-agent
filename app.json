@@ -2,7 +2,7 @@
   "name": "Buildkite Agent",
   "website": "https://buildkite.com",
   "description": "Run Buildkite workers as a Heroku app",
-  "repository": "https://github.com/bjeanes/heroku-buildkite-agent",
+  "repository": "https://github.com/buildkite/heroku-buildkite-agent",
   "logo": "https://logo.clearbit.com/buildkite.com",
   "keywords": ["buildkite", "ci", "tests", "continuous integration"],
   "env": {

@@ -6,6 +6,15 @@ This embeds buildkite-agent version 1.0-beta.30.516. To update simply extract th
 
 ## Usage
 
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+Press the button above, provide your agent token, then hit "Deploy". Once it's
+deployed, click on "Manage App" and scale up the `agent` process to at least 1.
+
+You should see your Buildkite agent dashboard register the new agent.
+
+To set it up on Heroku manually without the button, follow these instructions instead:
+
 ```bash
 # Create a dyno
 $ heroku create my-buildkite-agent \
