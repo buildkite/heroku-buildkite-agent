@@ -1,0 +1,37 @@
+{
+  "name": "Buildkite Agent",
+  "website": "https://buildkite.com",
+  "description": "Run Buildkite workers as a Heroku app",
+  "repository": "https://github.com/buildkite/heroku-buildkite-agent",
+  "logo": "https://logo.clearbit.com/buildkite.com",
+  "keywords": ["buildkite", "ci", "tests", "continuous integration"],
+  "env": {
+    "BUILDKITE_AGENT_TOKEN": {
+      "description": "Get from https://buildkite.com/organizations/YOUR_ORG/agents",
+      "required": true
+    },
+    "BUILDKITE_AGENT_NAME": {
+      "description": "Custom agent name",
+      "value": "heroku-%n",
+      "required": false
+    },
+    "BUILDKITE_AGENT_META_DATA": {
+      "description": "Metadata to apply to all builds on this agent. See https://buildkite.com/docs/agent/agent-meta-data",
+      "required": false
+    },
+    "GITHUB_AUTH_TOKEN": {
+      "description": "Used to access private GitHub repos cloned with HTTPS. See http://developer.github.com/v3/oauth/#non-web-application-flow",
+      "required": false
+    },
+    "SSH_KEY": {
+      "description": "Private SSH key for keypair used to fetch repositories, if needed",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    { "url": "https://github.com/bjeanes/ssh-private-key-buildpack.git" },
+    { "url": "https://github.com/bjeanes/heroku-buildpack-github-netrc.git" },
+    { "url": "https://github.com/bjeanes/heroku-buildpack-copy-build-creds.git" },
+    { "url": "https://github.com/ryandotsmith/null-buildpack.git" }
+  ]
+}

@@ -1,1 +1,1 @@
-agent: buildkite-agent start --bootstrap-script /app/bootstrap.sh --build-path /app/builds --hooks-path /app/hooks
+agent: ./buildkite-agent start --bootstrap-script ./bootstrap.sh --build-path ./builds --hooks-path ./hooks
