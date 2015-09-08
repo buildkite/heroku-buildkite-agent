@@ -1,6 +1,8 @@
 # buildkite-agent Heroku app
 
-An example of running the buildkite-agent on a Heroku dyno using the [buildkite-agent build pack](https://github.com/buildkite/heroku-buildkite-agent-buildpack) on the Cedar stack.
+An example of running the buildkite-agent on a Heroku dyno using the [buildkite-agent build pack](https://github.com/buildkite/heroku-buildkite-agent-buildpack).
+
+The agent will run with `heroku=true` metadata applied.
 
 ## Usage
 
@@ -37,7 +39,7 @@ $ heroku scale agent=24:2X
 
 ## Customising
 
-You can fork this repo and add your own hooks via the hooks directory, or even switch it to a [multi-buildpack](https://github.com/ddollar/heroku-buildpack-multi) to you can make other tools available inside your dyno.
+You can fork this repo and add your own hooks into a directory specified by a `BUILDKITE_HOOKS_PATH` var you set.
 
 ## License
 
