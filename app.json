@@ -31,6 +31,6 @@
     { "url": "https://github.com/bjeanes/ssh-private-key-buildpack.git" },
     { "url": "https://github.com/bjeanes/heroku-buildpack-github-netrc.git" },
     { "url": "https://github.com/bjeanes/heroku-buildpack-copy-build-creds.git" },
-    { "url": "https://github.com/bjeanes/heroku-buildpack-buildkite-agent.git" }
+    { "url": "https://github.com/buildkite/heroku-buildkite-agent-buildpack.git" }
   ]
 }

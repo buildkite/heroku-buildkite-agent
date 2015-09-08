@@ -1,6 +1,6 @@
 # buildkite-agent Heroku app
 
-An example of running the buildkite-agent on a Heroku dyno using the [buildkite-agent build pack](https://github.com/bjeanes/heroku-buildpack-buildkite-agent) on the Cedar stack.
+An example of running the buildkite-agent on a Heroku dyno using the [buildkite-agent build pack](https://github.com/buildkite/heroku-buildkite-agent-buildpack) on the Cedar stack.
 
 ## Usage
 
@@ -16,7 +16,7 @@ To set it up on Heroku manually without the button, follow these instructions in
 ```bash
 # Create a dyno
 $ heroku create my-buildkite-agent \
-               --buildpack https://github.com/bjeanes/heroku-buildpack-buildkite-agent.git
+               --buildpack https://github.com/buildkite/heroku-buildkite-agent-buildpack.git
 
 # Put in your token and any metadata for targeting the agents
 $ heroku config:set BUILDKITE_AGENT_TOKEN=xxx \
