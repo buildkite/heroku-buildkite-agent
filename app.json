@@ -12,7 +12,6 @@
     },
     "BUILDKITE_AGENT_NAME": {
       "description": "Custom agent name",
-      "value": "heroku-%n",
       "required": false
     },
     "BUILDKITE_AGENT_META_DATA": {
@@ -32,6 +31,6 @@
     { "url": "https://github.com/bjeanes/ssh-private-key-buildpack.git" },
     { "url": "https://github.com/bjeanes/heroku-buildpack-github-netrc.git" },
     { "url": "https://github.com/bjeanes/heroku-buildpack-copy-build-creds.git" },
-    { "url": "https://github.com/ryandotsmith/null-buildpack.git" }
+    { "url": "https://github.com/bjeanes/heroku-buildpack-buildkite-agent.git" }
   ]
 }

@@ -1,5 +1,0 @@
-#!/bin/bash
-
-# The `pre-command` hook will run just before your build command runs
-
-set -e
