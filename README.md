@@ -28,13 +28,13 @@ $ heroku config:set BUILDKITE_AGENT_TOKEN=xxx \
 $ git push heroku master
 
 # Spin up an agent on a 1x dyno
-$ heroku scale agent=1
+$ heroku scale ci=1
 
 # Tail the logs
 $ heroku logs -t
 
-# Spin up an squadron of 2x agent dynos
-$ heroku scale agent=24:2X
+# Spin up an squadron of 2x ci dynos
+$ heroku scale ci=24:2X
 ```
 
 ## Customising
