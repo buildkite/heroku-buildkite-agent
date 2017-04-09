@@ -37,6 +37,32 @@ $ heroku logs -t
 $ heroku scale ci=24:2X
 ```
 
+## Dokku
+
+You can also run this example on [Dokku](https://github.com/dokku/dokku), a self-hosted Heroku alternative.
+
+To deploy to a Dokku server:
+
+```bash
+### On the Dokku server
+# Create an app
+$ dokku apps:create buildkite
+
+# Set the required variables
+$ dokku config:set BUILDPACK_URL=https://github.com/buildkite/heroku-buildkite-agent-buildpack.git \
+                   BUILDKITE_AGENT_TOKEN=xxx
+# You can optionally include environment variables such as BUILDKITE_AGENT_NAME (see package.json for full list)
+
+### On your computer
+# Add the Dokku server as a git remote
+$ git remote add dokku root@your.dokku.server:buildkite
+
+# Optionally modify the DOKKU_SCALE file to spin up multiple agents
+
+# Push the repo to Dokku to trigger the deploy
+$ git push dokku
+```
+
 ## Customising
 
 You can fork this repo and add your own hooks into a directory specified by a `BUILDKITE_HOOKS_PATH` var you set.
