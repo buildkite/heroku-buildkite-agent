@@ -1,3 +1,7 @@
+# Deprecated
+
+> Buildkite no longer maintains heroku-buildkite-agent. This repository has been deprecated and is no longer maintained.
+
 # buildkite-agent Heroku app
 
 An example of running the buildkite-agent on a Heroku dyno using the [buildkite-agent build pack](https://github.com/buildkite/heroku-buildkite-agent-buildpack).
